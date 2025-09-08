@@ -1,0 +1,8 @@
+*          text=auto
+*.md       text diff=markdown
+*.json     text
+*.yml      text
+*.yaml     text
+*.sh       text eol=lf
+
+# Add language specific settings below
