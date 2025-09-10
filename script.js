@@ -18,5 +18,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 clickOnAnnotate = function() {
-    alert("Annotate button clicked!");
+    window.location.href = 'annotate.html';
 }
