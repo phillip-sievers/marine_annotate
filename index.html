@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Image Annotation App</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
     </head>
     <body>
         <h1 class="headline">Image Annotation App</h1>
@@ -25,12 +24,11 @@
             <div id="previewSection" class="hidden preview-section">
                 <div class="preview-header">
                     <h3>Preview:</h3>
-                    <button class="annotate-button" onclick="clickOnAnnotate()">
-                        ANNOTATE →
-                    </button>
+                    <button class="annotate-button">ANNOTATE →</button>
                 </div>
                 <img id="imagePreview" alt="Preview" />
             </div>
         </div>
+        <script type="module" src="/src/main.js"></script>
     </body>
 </html>

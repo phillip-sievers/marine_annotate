@@ -1,0 +1,22 @@
+{
+    "name": "warmup_spike_ps445",
+    "version": "1.0.0",
+    "description": "Basic project to interact with data contained in a remote data source. [Assigment](https://courses.cs.duke.edu/compsci408/fall25/assign/warmup.php)",
+    "main": "src/main.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@coursework.cs.duke.edu:compsci408_2025fall/warmup_spike_ps445.git"
+    },
+    "keywords": [],
+    "author": "Phillip Sievers",
+    "license": "MIT",
+    "dependencies": {
+        "konva": "^10.0.1",
+        "vite": "^7.1.5"
+    }
+}
