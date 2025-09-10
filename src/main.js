@@ -1,8 +1,10 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const uploadArea = document.getElementById('uploadArea');
     const fileInput = document.getElementById('fileInput');
     const previewSection = document.getElementById('previewSection');
     const imagePreview = document.getElementById('imagePreview');
+    const annotateButton = document.querySelector('.annotate-button');
 
     uploadArea.addEventListener('click', () => fileInput.click());
 
@@ -15,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
             uploadArea.classList.add('hidden');
         }
     });
-});
 
-clickOnAnnotate = function() {
-    window.location.href = 'annotate.html';
-}
+    annotateButton.addEventListener('click', () => {
+        window.location.href = 'annotate.html';
+    });
+});
