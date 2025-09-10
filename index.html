@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Annotation App</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1 class="headline">Image Annotation App</h1>
+
+        <div id="uploadPage">
+            <h2>Upload an Image</h2>
+
+            <div class="upload-area" id="uploadArea">
+                <p>Click here or drag and drop an image file</p>
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept="image/*"
+                    style="display: none" />
+            </div>
+
+            <div id="previewSection" class="hidden">
+                <h3>Preview:</h3>
+                <img id="imagePreview" alt="Preview" />
+                <br />
+                <button onclick="clickOnAnnotate()">Annotate</button>
+            </div>
+        </div>
+    </body>
+</html>
