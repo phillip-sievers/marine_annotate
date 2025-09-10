@@ -17,6 +17,7 @@ Hours Spent: 3
 
 -   Assignment blog posts by gitlab
 -   https://www.w3schools.com/graphics/canvas_drawing.asp and the whole chapter about the canvas element
+-   https://konvajs.org/docs/overview.html
 
 ### Features
 
