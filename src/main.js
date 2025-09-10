@@ -1,5 +1,3 @@
-import "./canvas.js";
-
 const uploadArea = document.getElementById('uploadArea');
 const fileInput = document.getElementById('fileInput');
 const previewSection = document.getElementById('previewSection');
