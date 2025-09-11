@@ -138,4 +138,38 @@ img {
 #canvas {
     border: 2px solid #666;
     box-shadow: 2px 2px #bbb;
+
+    :hover {
+        cursor: crosshair;
+    }
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-family: "Menlo", monospace;
+}
+
+.color-input {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border: 0.1rem solid #000;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: 2px 2px #bbb;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 3px 3px #bbb;
+    }
 }

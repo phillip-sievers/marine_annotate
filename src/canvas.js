@@ -24,12 +24,14 @@ if (imgUrl) {
 let isDrawing = false;
 let currentLine;
 
+const colorInput = document.getElementById("colorInput");
+
 stage.on("mousedown touchstart", () => {
     isDrawing = true;
     const pos = stage.getPointerPosition();
     currentLine = new Konva.Line({
-        stroke: "blue",
-        strokeWidth: 2,
+        stroke: colorInput.value,
+        strokeWidth: 4,
         points: [pos.x, pos.y],
     });
     layer.add(currentLine);
@@ -49,7 +51,6 @@ stage.on("mouseup touchend", () => {
 
 const saveButton = document.getElementById("saveButton");
 const clearButton = document.getElementById("clearButton");
-const canvasContainer = document.getElementById("canvas");
 
 saveButton.addEventListener("click", () => {
     const dataURL = stage.toDataURL({});
