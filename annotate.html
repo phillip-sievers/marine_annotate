@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -8,8 +8,26 @@
     </head>
     <body>
         <h1 class="headline">Image Annotation App</h1>
-        <div id="canvas"></div>
-
+        <div class="window">
+            <div class="toolbar">
+                <button class="action-button" id="saveButton">
+                    Save Annotations
+                </button>
+                <button class="action-button" id="clearButton">
+                    Clear Annotations
+                </button>
+                <div class="color-picker">
+                    <label for="colorInput">Select Color:</label>
+                    <input
+                        class="color-input"
+                        type="color"
+                        id="colorInput"
+                        value="#00539B"
+                    />
+                </div>
+            </div>
+            <div id="canvas"></div>
+        </div>
         <script type="module" src="/src/canvas.js"></script>
     </body>
 </html>
