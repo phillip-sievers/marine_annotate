@@ -12,18 +12,13 @@ const layer = new Konva.Layer();
 stage.add(layer);
 
 if (imgUrl) {
-    const imageObj = new Image();
-    imageObj.src = imgUrl;
-    imageObj.onload = () => {
-        const bg = new Konva.Image({
+    Konva.Image.fromURL(imgUrl, (image) => {
+        image.setAttrs({
             x: 0,
             y: 0,
-            image: imageObj,
-            width: stage.width(),
-            height: stage.height(),
         });
-        layer.add(bg);
-    };
+        layer.add(image);
+    });
 }
 
 let isDrawing = false;
@@ -50,4 +45,26 @@ stage.on("mousemove touchmove", () => {
 
 stage.on("mouseup touchend", () => {
     isDrawing = false;
+});
+
+const saveButton = document.getElementById("saveButton");
+const clearButton = document.getElementById("clearButton");
+const canvasContainer = document.getElementById("canvas");
+
+saveButton.addEventListener("click", () => {
+    const dataURL = stage.toDataURL({});
+    const link = document.createElement("a");
+    link.download = "stage.png";
+    link.href = dataURL;
+    link.click();
+});
+
+clearButton.addEventListener("click", () => {
+    layer.getChildren().forEach((child) => {
+        if (child.className === "Line") {
+            child.destroy();
+        }
+    });
+    currentLine = null;
+    layer.batchDraw();
 });
