@@ -63,7 +63,7 @@ body {
     margin-bottom: 10px;
 }
 
-.annotate-button {
+button {
     color: #fff;
     background: #00539b;
     text-align: center;
