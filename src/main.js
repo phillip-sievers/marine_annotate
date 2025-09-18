@@ -35,6 +35,8 @@ const marineAnimals = [
     "tropical fish",
 ];
 
+const API_KEY = import.meta.env.VITE_UNSPLASH_API_KEY;
+
 async function getRandomMarineImage() {
     const randomAnimal =
         marineAnimals[Math.floor(Math.random() * marineAnimals.length)];
