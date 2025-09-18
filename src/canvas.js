@@ -18,6 +18,7 @@ if (imgUrl) {
             y: 0,
         });
         layer.add(image);
+        layer.batchDraw();
     });
 }
 
