@@ -22,8 +22,6 @@ annotateButton.addEventListener("click", () => {
     window.location.href = `annotate.html`;
 });
 
-const API_KEY = "RB6xVqFugJmNed57P07Ql_r9l45zBtMUtqA3yr4-6eo";
-
 const marineAnimals = [
     "whale",
     "dolphin",
