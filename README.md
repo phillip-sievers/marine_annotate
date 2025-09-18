@@ -11,14 +11,15 @@ Start Date: 9/8/2025
 
 Finish Date: 9/17/2025
 
-Hours Spent: 4
+Hours Spent: 7
 
 ### Resources Used
 
 -   Assignment blog posts by gitlab
 -   https://www.w3schools.com/graphics/canvas_drawing.asp and the whole chapter about the canvas element
 -   https://konvajs.org/docs/overview.html
--
+-   AI for documentary questions
+-   Netlify for deployment
 
 ### Features
 
@@ -29,7 +30,7 @@ Hours Spent: 4
 
 ### Known Bugs
 
--   Some images do not get displayed in the right format and canvas overflows
+-   Some images do not get displayed in the right format and get stretched in the canvas
 
 ### Notes
 
