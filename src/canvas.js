@@ -16,8 +16,11 @@ if (imgUrl) {
         image.setAttrs({
             x: 0,
             y: 0,
+            width: stage.width(),
+            height: stage.height(),
         });
         layer.add(image);
+        layer.batchDraw();
     });
 }
 

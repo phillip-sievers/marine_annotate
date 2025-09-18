@@ -8,13 +8,17 @@ const getImageButton = document.querySelector(".get-image");
 uploadArea.addEventListener("click", () => fileInput.click());
 
 fileInput.addEventListener("change", (e) => {
-    const currFiles = e.target.files;
-    if (currFiles.length > 0) {
-        let src = URL.createObjectURL(currFiles[0]);
-        localStorage.setItem("selectedImage", src);
-        imagePreview.src = src;
-        previewSection.classList.remove("hidden");
-        uploadArea.classList.add("hidden");
+    const file = e.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const dataUrl = event.target.result;
+            localStorage.setItem("selectedImage", dataUrl);
+            imagePreview.src = dataUrl;
+            previewSection.classList.remove("hidden");
+            uploadArea.classList.add("hidden");
+        };
+        reader.readAsDataURL(file);
     }
 });
 
@@ -34,6 +38,8 @@ const marineAnimals = [
     "coral reef",
     "tropical fish",
 ];
+
+const API_KEY = import.meta.env.VITE_UNSPLASH_API_KEY;
 
 async function getRandomMarineImage() {
     const randomAnimal =
