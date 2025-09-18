@@ -4,6 +4,7 @@ Basic project to interact with data contained in a remote data source.
 [Assigment](https://courses.cs.duke.edu/compsci408/fall25/assign/warmup.php)
 
 Name: Phillip Sievers
+[Marine Annotate](https://marine-annotate.netlify.app/)
 
 ### Timeline
 
@@ -18,7 +19,7 @@ Hours Spent: 7
 -   Assignment blog posts by gitlab
 -   https://www.w3schools.com/graphics/canvas_drawing.asp and the whole chapter about the canvas element
 -   https://konvajs.org/docs/overview.html
--   AI for documentary questions
+-   AI for documentation questions
 -   Netlify for deployment
 
 ### Features
