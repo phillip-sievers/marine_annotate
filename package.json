@@ -4,9 +4,9 @@
     "description": "Basic project to interact with data contained in a remote data source. [Assigment](https://courses.cs.duke.edu/compsci408/fall25/assign/warmup.php)",
     "main": "src/main.js",
     "scripts": {
-        "dev": "vite",
+        "dev": "netlify dev",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "netlify serve"
     },
     "repository": {
         "type": "git",
@@ -18,5 +18,8 @@
     "dependencies": {
         "konva": "^10.0.1",
         "vite": "^7.1.5"
+    },
+    "devDependencies": {
+        "netlify-cli": "^23.5.1"
     }
 }

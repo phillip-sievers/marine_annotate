@@ -26,28 +26,9 @@ annotateButton.addEventListener("click", () => {
     window.location.href = `annotate.html`;
 });
 
-const marineAnimals = [
-    "whale",
-    "dolphin",
-    "shark",
-    "sea turtle",
-    "octopus",
-    "jellyfish",
-    "seahorse",
-    "starfish",
-    "coral reef",
-    "tropical fish",
-];
-
-const API_KEY = import.meta.env.VITE_UNSPLASH_API_KEY;
-
 async function getRandomMarineImage() {
-    const randomAnimal =
-        marineAnimals[Math.floor(Math.random() * marineAnimals.length)];
+    const response = await fetch("/.netlify/functions/getImage");
 
-    const response = await fetch(
-        `https://api.unsplash.com/search/photos?query=${randomAnimal}&client_id=${API_KEY}&per_page=1`
-    );
     const data = await response.json();
 
     let src = data.results[0].urls.regular;
